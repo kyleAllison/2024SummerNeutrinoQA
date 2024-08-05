@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<DManagerRegisterConfig
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/DManagerRegisterConfig.xsd'>
+  
+  <!-- For getting run settings from book-keeping. -->
+  <!--manager> RunLogTextManager </manager-->
+  <!--manager> RunLogHttpManager </manager-->
+  <manager> RunFixedSettingsManager </manager>
+  
+  <!-- Target material and alignment info. -->
+  <manager> TargetConfigFixedManager </manager>
+
+  <!-- Magnetic field finetuning scale factor. -->
+  <manager> MagneticFieldFixScaleFactorManager </manager>
+
+  <!-- For new DAQ channel mapping. -->
+  <manager> PteroDAQTriggerXMLManager </manager>
+  <manager> PteroDAQTPCFixedManager </manager>
+  <manager> PteroDAQGRCFixedManager </manager>
+  <manager> PteroDAQTPCMaskManager </manager>
+  <!-- Calibration constants for Multi-Hit TDC. -->
+  <manager> MHTDCCalibrationFixedManager </manager>
+
+  <!-- Calibration constants for DRS4 based detector channels. -->
+  <manager> DRS4CalibrationManager </manager>
+  <manager> DRS4CalibrationFixedManager </manager>
+
+  <!-- Beam counter properties. -->
+  <manager> BeamCounterGeometryManager </manager>
+  <manager> BeamCounterPositionFixedManager </manager>
+  <manager> BeamCounterDRSChannelManager </manager>
+  <manager> BeamCounterTimingFixedManager </manager>
+
+  <!-- BPD properties. -->
+  <manager> BPDStaticInfoXMLManager </manager>
+  <manager> BPDFixedManager </manager>
+  <manager> BPDStripGainFixedManager </manager>
+
+  <!-- TPC properties. -->
+  <manager> TPCWienerFilterManager </manager>
+  <manager> TPCPhaseCalibrationFixedManager </manager>
+  <manager> TPCGlobalT0FixedManager </manager>
+  <manager> TPCChamberT0FixedManager </manager>
+  <manager> TPCPadT0FixedManager </manager>
+  <manager> TPCPadGainFixedManager </manager>
+  <manager> TPCAlignmentGeometryFixedManager </manager>
+  <manager> TPCPadGeometryFixedManager </manager>
+  <manager> TPCDriftVelocityFixedManager </manager>
+  <manager> TPCSlowControlFixedManager </manager>
+  <manager> TPCChargeLossCorrectionFixedManager </manager>
+  <manager> TPCResidualsFixedManager </manager>
+  <manager> TPCdEdxCalibConstantsTextManager </manager>
+  <manager> TPCEDistoFixedManager </manager>
+  <!-- GRC properties. -->
+  <manager> GRCAlignmentGeometryFixedManager </manager>
+  <manager> GRCInternalGeometryFixedManager </manager>
+  <manager> GRCWireGainFixedManager </manager>
+
+  <!-- Vertex Detector (VD) properties. -->
+
+  <manager> SiliconStaticInfoXMLManager </manager>
+  <manager> SiliconNoiseFixedManager </manager>
+  <manager> SiliconTypeFixedManager </manager>
+  <manager> SiliconGeometryXMLManager </manager>
+
+  <!-- PSD properties. -->
+  <manager> PSDCalibFixedManager </manager>
+  <manager> PSDStaticInfoXMLManager </manager>
+  <manager> PSDGeometryFixedManager </manager>
+  
+  <!-- TOF properties. -->
+  <manager> TOFAlignmentGeometryFixedManager </manager>
+  <manager> TOFInternalGeometryManager </manager>
+  <manager> TOFStatusManager </manager>
+  <manager> TOFStaticGeometryManager </manager>
+  <manager> TOFFScintillatorFixedManager </manager>
+  <manager> TOFFDRS4ChannelManager </manager>
+  <manager> MRPCStaticInfoManager </manager>
+
+  <!-- For simulation. -->
+  <manager> G4MaterialFixedManager </manager>
+  <manager> GasBagGeometryFixedManager </manager>
+  <manager> GasBagStatusFixedManager </manager>
+  <manager> MagnetAlignmentFixedManager </manager>
+  <manager> MagnetGeometryFixedManager </manager>
+  <manager> TPCTimeBinModeXMLManager </manager>
+
+</DManagerRegisterConfig>

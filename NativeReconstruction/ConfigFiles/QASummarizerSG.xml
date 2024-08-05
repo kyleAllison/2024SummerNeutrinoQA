@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module QASummarizerSG -->
+
+<QASummarizerSG
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/QASummarizerSG.xsd'>
+
+  <!-- Verbosity: default, silent, terse, verbose, annoying -->
+  <verbosity> verbose </verbosity>
+
+  <!-- file name of QA histograms (empty string for no output). -->
+  <qaFileName> QAHistograms.root </qaFileName>
+
+</QASummarizerSG>

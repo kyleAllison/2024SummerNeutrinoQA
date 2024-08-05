@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module TOFFReconstructorKAn -->
+
+<DRS4CalibratorKA
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/DRS4CalibratorKA.xsd'>
+
+  <DefaultCalibrationEntry>
+    <!--1 to perform pedestal removal for all traces, 0 to not.-->
+    <removePedestals> 1 </removePedestals>
+
+    <!--Noise level threshold for pedestal removal. For the pedestal to be removed, there has to 
+        be nCellsInAverage in a row all within maxVoltageInAverage of each other.-->
+    <maxVoltageInAverage unit="volt"> 0.020 </maxVoltageInAverage>
+
+    <!--Number of cells used to get the average in the pedestal removal-->
+    <nCellsInAverage> 30 </nCellsInAverage>
+  </DefaultCalibrationEntry>
+
+  <!-- sBPD1 -->
+  <CustomCalibrationEntry>
+    <boardIds> 256 257 258 259 260 261 262 263 264 265 266 267 268 269 </boardIds>
+    <!--1 to perform pedestal removal for all traces, 0 to not.-->
+    <removePedestals> 0 </removePedestals>
+
+    <!--Noise level threshold for pedestal removal. For the pedestal to be removed, there has to 
+        be nCellsInAverage in a row all within maxVoltageInAverage of each other.-->
+    <maxVoltageInAverage unit="volt"> 0.0 </maxVoltageInAverage>
+
+    <!--Number of cells used to get the average in the pedestal removal-->
+    <nCellsInAverage> 0 </nCellsInAverage>
+  </CustomCalibrationEntry>
+  <!-- sBPD2 -->
+  <CustomCalibrationEntry>
+    <boardIds> 512 513 514 515 516 517 518 519 520 521 522 523 524 525 </boardIds>
+      <!--1 to perform pedestal removal for all traces, 0 to not.-->
+    <removePedestals> 0 </removePedestals>
+
+    <!--Noise level threshold for pedestal removal. For the pedestal to be removed, there has to 
+        be nCellsInAverage in a row all within maxVoltageInAverage of each other.-->
+    <maxVoltageInAverage unit="volt"> 0.0 </maxVoltageInAverage>
+
+    <!--Number of cells used to get the average in the pedestal removal-->
+    <nCellsInAverage> 0 </nCellsInAverage>
+  </CustomCalibrationEntry>
+  <!-- sBPD3 -->
+  <CustomCalibrationEntry>
+    <boardIds> 768 769 770 771 772 773 774 775 776 777 778 779 780 781 </boardIds>
+    <!--1 to perform pedestal removal for all traces, 0 to not.-->
+    <removePedestals> 0 </removePedestals>
+
+    <!--Noise level threshold for pedestal removal. For the pedestal to be removed, there has to 
+        be nCellsInAverage in a row all within maxVoltageInAverage of each other.-->
+    <maxVoltageInAverage unit="volt"> 0.0 </maxVoltageInAverage>
+
+    <!--Number of cells used to get the average in the pedestal removal-->
+    <nCellsInAverage> 0 </nCellsInAverage>
+  </CustomCalibrationEntry>
+
+  <RemoveSpikes> 1 </RemoveSpikes>
+  <SpikeRemovalThreshold unit="volt"> 0.01 </SpikeRemovalThreshold>
+
+  <beamCountersToReconstruct> S1_1 S1_2 S1_3 S1_4 S2 S3 S3p S4 S5 V0 V1 V1p PSD Ced6 Ced7 Ced8 THCd THCa </beamCountersToReconstruct>
+
+</DRS4CalibratorKA>

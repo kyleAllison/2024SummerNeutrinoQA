@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<DetectorCorrelationQA
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/DetectorCorrelationQA.xsd'>
+  
+  <!-- file name of QA histograms (empty string for suppressing output). -->
+  <qaFileName> DetectorCorrelationQA.root </qaFileName>
+
+  <MinGlobalTrackClusters> 20 </MinGlobalTrackClusters>
+  
+  <!--Minimum number of clusters on the track to count towards local/global tracks-->
+  <minVDClusters> 3 </minVDClusters>
+  <minVTPC1Clusters> 10 </minVTPC1Clusters>
+  <minVTPC2Clusters> 10 </minVTPC2Clusters>
+  <minMTPCClusters> 15 </minMTPCClusters>
+
+  <!--If the first and last clusters of a local track are within this distance of the same
+      Y-boundary of a tpc, don't count it-->
+  <minYDistance> 10 </minYDistance>
+
+  <minStepSize> 0.5 </minStepSize>
+  <maxStepSize> 20 </maxStepSize>
+  
+  <histogram1D id="VDTrackMultiplicityT1">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     1000.5  </xMax>
+    <hisTitle> Number of Local VD Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="VDTrackMultiplicityT2">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     1000.5  </xMax>
+    <hisTitle> Number of Local VD Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="VTPC1TrackMultiplicityT1">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Local VTPC-1 Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="VTPC1TrackMultiplicityT2">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Local VTPC-1 Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="VTPC2TrackMultiplicityT1">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Local VTPC-2 Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="VTPC2TrackMultiplicityT2">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Local VTPC-2 Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="VTPC2GlobalTrackMultiplicityT1">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Global VTPC-2 Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="VTPC2GlobalTrackMultiplicityT2">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Global VTPC-2 Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="VTPC1GlobalTrackMultiplicityT1">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Global VTPC-1 Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="VTPC1GlobalTrackMultiplicityT2">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Global VTPC-1 Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="MTPCTrackMultiplicityT1">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Local MTPC Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="MTPCTrackMultiplicityT2">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Local MTPC Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="MTPCGlobalTrackMultiplicityT1">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Global MTPC Tracks, T1 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="MTPCGlobalTrackMultiplicityT2">
+    <nBinsX>   50    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     50  </xMax>
+    <hisTitle> Number of Global MTPC Tracks, T2 </hisTitle>
+    <xAxisTitle> N tracks </xAxisTitle>
+    <yAxisTitle> count </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="BeamVTPC1TrackXDifferenceAtTargetZ">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <hisTitle> Difference in Beam X-Position and VTPC1 Track X-Position at Target Center Z </hisTitle>
+    <xAxisTitle> X [cm] </xAxisTitle>
+    <yAxisTitle> Entries </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="BeamVTPC1TrackYDifferenceAtTargetZ">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <hisTitle> Difference in Beam Y-Position and VTPC1 Track Y-Position at Target Center Z </hisTitle>
+    <xAxisTitle> Y [cm] </xAxisTitle>
+    <yAxisTitle> Entries </yAxisTitle>
+  </histogram1D>
+
+  <histogram1D id="BeamVTPC1TrackXDifferenceAtTargetZMinusDistance">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <hisTitle> Difference in Beam X-Position and VTPC1 Track X-Position at Target Center (Z - 5 cm) </hisTitle>
+    <xAxisTitle> X [cm] </xAxisTitle>
+    <yAxisTitle> Entries </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="BeamVTPC1TrackYDifferenceAtTargetZMinusDistance">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <hisTitle> Difference in Beam Y-Position and VTPC1 Track Y-Position at Target Center (Z - 5 cm) </hisTitle>
+    <xAxisTitle> Y [cm] </xAxisTitle>
+    <yAxisTitle> Entries </yAxisTitle>
+  </histogram1D>
+  
+  <histogram1D id="BeamVTPC1TrackXDifferenceAtTargetZPlusDistance">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <hisTitle> Difference in Beam X-Position and VTPC1 Track X-Position at Target Center (Z + 5 cm) </hisTitle>
+    <xAxisTitle> X [cm] </xAxisTitle>
+    <yAxisTitle> Entries </yAxisTitle>
+  </histogram1D>
+  <histogram1D id="BeamVTPC1TrackYDifferenceAtTargetZPlusDistance">
+    <nBinsX>   500    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <hisTitle> Difference in Beam Y-Position and VTPC1 Track Y-Position at Target Center (Z + 5 cm) </hisTitle>
+    <xAxisTitle> Y [cm] </xAxisTitle>
+    <yAxisTitle> Entries </yAxisTitle>
+  </histogram1D>
+
+
+  <histogram2D id="GlobalTracksVsPSDEnergy">
+    <nBinsX>   100    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     100.5  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     0      </yMin>
+    <yMax>     600   </yMax>
+    <hisTitle> Number of TPC Global Tracks vs. PSD Energy </hisTitle>
+    <xAxisTitle> Global Tracks </xAxisTitle>
+    <yAxisTitle> PSD Energy [GeV] </yAxisTitle>
+  </histogram2D>
+
+  <!--histogram2D id="GlobalTracksVsPSDEnergyT1">
+    <nBinsX>   100    </nBinsX> 
+    <xMin>     0.5    </xMin>       
+    <xMax>     100.5  </xMax>  
+    <nBinsY>   200    </nBinsY>   
+    <yMin>     0      </yMin>        
+    <yMax>     600   </yMax> 
+    <hisTitle> Number of TPC Global Tracks vs. PSD Energy, T1 </hisTitle> 
+    <xAxisTitle> Global Tracks </xAxisTitle>  
+    <yAxisTitle> PSD Energy [GeV] </yAxisTitle>  
+ </histogram2D>  
+ <histogram2D id="GlobalTracksVsPSDEnergyT2">  
+   <nBinsX>   100    </nBinsX>  
+   <xMin>     0.5    </xMin>  
+   <xMax>     100.5  </xMax>  
+   <nBinsY>   200    </nBinsY> 
+   <yMin>     0      </yMin>  
+    <yMax>     600   </yMax>  
+    <hisTitle> Number of TPC Global Tracks vs. PSD Energy, T2 </hisTitle> 
+ <xAxisTitle> Global Tracks </xAxisTitle>  
+ <yAxisTitle> PSD Energy [GeV] </yAxisTitle>  
+ </histogram2D-->  
+
+  <histogram2D id="GlobalTracksVsVDTracks">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     300.5  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     300.5  </yMax>
+    <hisTitle> Number of TPC Global Tracks vs. Number of VD Tracks </hisTitle>
+    <xAxisTitle> Global Tracks </xAxisTitle>
+    <yAxisTitle> Vertex Detector Tracks </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="GlobalTracksVsMRPCHits">
+    <nBinsX>   100    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     100.5  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     300.5  </yMax>
+    <hisTitle> Number of TPC Global Tracks vs. MRPC Hits </hisTitle>
+    <xAxisTitle> Global Tracks </xAxisTitle>
+    <yAxisTitle> MRPC Hits </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="GlobalTracksVsGRCClusters">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     300.5  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     50  </yMax>
+    <hisTitle> Number of TPC Global Tracks vs. GRC Clusters </hisTitle>
+    <xAxisTitle> Global Tracks </xAxisTitle>
+    <yAxisTitle> MRPC Hits </yAxisTitle>
+  </histogram2D>
+
+
+
+  <histogram2D id="VDvsVTPC1ClustersT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     5000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     30000  </yMax>
+    <hisTitle> Number of VD Clusters vs. VTPC-1 Clusters, T1 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> N VTPC-1 Clusters </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="VDvsVTPC1ClustersT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     5000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     30000  </yMax>
+    <hisTitle> Number of VD Clusters vs. VTPC-1 Clusters, T2 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> N VTPC-1 Clusters </yAxisTitle>
+  </histogram2D>
+
+
+  <histogram2D id="VDvsVTPC2ClustersT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     2500  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     30000  </yMax>
+    <hisTitle> Number of VD Clusters vs. VTPC-2 Clusters, T1 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> N VTPC-2 Clusters </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="VDvsVTPC2ClustersT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     2500  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     30000  </yMax>
+    <hisTitle> Number of VD Clusters vs. VTPC-2 Clusters, T2 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> N VTPC-2 Clusters </yAxisTitle>
+  </histogram2D>
+
+
+  <histogram2D id="VTPC1vsVTPC2ClustersT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     4000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     4000  </yMax>
+    <hisTitle> Number of VTPC-1 Clusters vs. VTPC-2 Clusters, T1 </hisTitle>
+    <xAxisTitle> N VTPC-1 Clusters </xAxisTitle>
+    <yAxisTitle> N VTPC-2 Clusters </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="VTPC1vsVTPC2ClustersT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     4000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     4000  </yMax>
+    <hisTitle> Number of VTPC-1 Clusters vs. VTPC-2 Clusters, T2 </hisTitle>
+    <xAxisTitle> N VTPC-1 Clusters </xAxisTitle>
+    <yAxisTitle> N VTPC-2 Clusters </yAxisTitle>
+  </histogram2D>
+
+
+  <histogram2D id="VTPC2vsMTPCClustersT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     4000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     10000  </yMax>
+    <hisTitle> Number of VTPC-2 Clusters vs. MTPC Clusters, T1 </hisTitle>
+    <xAxisTitle> N VTPC-2 Clusters </xAxisTitle>
+    <yAxisTitle> N MTPC Clusters </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="VTPC2vsMTPCClustersT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     4000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     10000  </yMax>
+    <hisTitle> Number of VTPC-2 Clusters vs. MTPC Clusters, T2 </hisTitle>
+    <xAxisTitle> N VTPC-2 Clusters </xAxisTitle>
+    <yAxisTitle> N MTPC Clusters </yAxisTitle>
+  </histogram2D>
+
+
+  <histogram2D id="VDClustersvsFPSDEnergyT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     5000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     50000  </yMax>
+    <hisTitle> Number of VD Cluseters vs. FPSD Energy, T1 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> FPSD Energy </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="VDClustersvsFPSDEnergyT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     5000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     50000  </yMax>
+    <hisTitle> Number of VD Cluseters vs. FPSD Energy, T2 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> FPSD Energy </yAxisTitle>
+  </histogram2D>
+
+
+  <histogram2D id="VDClustersvsMPSDEnergyT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     5000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     20000  </yMax>
+    <hisTitle> Number of VD Cluseters vs. MPSD Energy, T1 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> MPSD Energy </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="VDClustersvsMPSDEnergyT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0.5    </xMin>
+    <xMax>     5000  </xMax>
+    <nBinsY>   300    </nBinsY>
+    <yMin>     0.5    </yMin>
+    <yMax>     20000  </yMax>
+    <hisTitle> Number of VD Cluseters vs. MPSD Energy, T2 </hisTitle>
+    <xAxisTitle> N VD Clusters </xAxisTitle>
+    <yAxisTitle> MPSD Energy </yAxisTitle>
+  </histogram2D>
+
+  
+  <histogram2D id="BeamVTPC1TrackDifferenceAtTargetZ">
+    <nBinsX>   200    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     -10    </yMin>
+    <yMax>     10  </yMax>
+    <hisTitle> Difference in Beam Position and VTPC1 Track Position at Target Center Z </hisTitle>
+    <xAxisTitle> X [cm] </xAxisTitle>
+    <yAxisTitle> Y [cm] </yAxisTitle>
+  </histogram2D>
+  
+  <histogram2D id="BeamVTPC1TrackDifferenceAtTargetZPlusDistance">
+    <nBinsX>   200    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     -10    </yMin>
+    <yMax>     10  </yMax>
+    <hisTitle> Difference in Beam Position and VTPC1 Track Position at Target Center (Z + 5 cm)</hisTitle>
+    <xAxisTitle> X [cm] </xAxisTitle>
+    <yAxisTitle> Y [cm] </yAxisTitle>
+  </histogram2D>
+  <histogram2D id="BeamVTPC1TrackDifferenceAtTargetZMinusDistance">
+    <nBinsX>   200    </nBinsX>
+    <xMin>     -10    </xMin>
+    <xMax>     10  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     -10    </yMin>
+    <yMax>     10  </yMax>
+    <hisTitle> Difference in Beam Position and VTPC1 Track Position at Target Center (Z - 5 cm) </hisTitle>
+    <xAxisTitle> X [cm] </xAxisTitle>
+    <yAxisTitle> Y [cm] </yAxisTitle>
+  </histogram2D>
+
+  <!-- \\\\\\\\\\\\\\\\\ -->
+  <!-- \\\\\\\\\\\\\\\\\ -->
+  <!-- Analysis -->
+  <histogram2D id="M5RecoVsS3signal">
+    <nBinsX>   400    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     40000  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     300  </yMax>
+    <hisTitle> M5 Reco vs S3 signal </hisTitle>
+    <xAxisTitle> M5 Reco </xAxisTitle>
+    <yAxisTitle> S3 signal </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="M5RecoVsVdTracks">
+    <nBinsX>   400    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     40000  </xMax>
+    <nBinsY>   400    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     700  </yMax>
+    <hisTitle> M5 Reco vs Vd tracks </hisTitle>
+    <xAxisTitle> M5 Reco </xAxisTitle>
+    <yAxisTitle> Vd tracks </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="VdTracksVsS3">
+    <nBinsX>   400    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     700  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     300  </yMax>
+    <hisTitle> Vd tracks vs S3 signal </hisTitle>
+    <xAxisTitle> Vd tracks </xAxisTitle>
+    <yAxisTitle> S3 signal </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="M5AnalogVsM5Reco">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     700  </xMax>
+    <nBinsY>   400    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     40000  </yMax>
+    <hisTitle> M5 Analog vs M5 Reco </hisTitle>
+    <xAxisTitle> M5 Analog </xAxisTitle>
+    <yAxisTitle> M5 Reco </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="M5AnalogVsM5RecoT1">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     700  </xMax>
+    <nBinsY>   400    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     40000  </yMax>
+    <hisTitle> M5 Analog vs M5 Reco (T1) </hisTitle>
+    <xAxisTitle> M5 Analog </xAxisTitle>
+    <yAxisTitle> M5 Reco </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="M5AnalogVsM5RecoT2">
+    <nBinsX>   300    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     700  </xMax>
+    <nBinsY>   400    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     40000  </yMax>
+    <hisTitle> M5 Analog vs M5 Reco (T2) </hisTitle>
+    <xAxisTitle> M5 Analog </xAxisTitle>
+    <yAxisTitle> M5 Reco </yAxisTitle>
+  </histogram2D>
+
+  <histogram2D id="FPSDRecoVsS3">
+    <nBinsX>   400    </nBinsX>
+    <xMin>     0    </xMin>
+    <xMax>     40000  </xMax>
+    <nBinsY>   200    </nBinsY>
+    <yMin>     0    </yMin>
+    <yMax>     300  </yMax>
+    <hisTitle> FPSD Reco vs S3 Ampltidue </hisTitle>
+    <xAxisTitle> FPSD Reco </xAxisTitle>
+    <yAxisTitle> S3 Ampltidue </yAxisTitle>
+  </histogram2D>
+
+</DetectorCorrelationQA>

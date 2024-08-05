@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<RunLogHttpManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/RunLogHttpManager.xsd'>
+
+  <hostname>
+    na61bq.web.cern.ch
+  </hostname>
+
+</RunLogHttpManager>

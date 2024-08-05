@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Taken from V07E data version. -->
+
+<TPCAlignmentGeometryFixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/TPCAlignmentGeometryFixedManager.xsd'
+  rotAngleOrder="y-z-x"
+  coordinateSystem="global">
+
+  <TPC name="VTPC1">
+    <centerX unit="cm"> 0.0919678 </centerX>
+    <centerY unit="cm"> -1.49921 </centerY>
+    <centerZ unit="cm"> -380.804 </centerZ>
+    <rotAngleX unit="deg"> 0.0494272 </rotAngleX>
+    <rotAngleY unit="deg"> -0.242003 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.113271 </rotAngleZ>
+  </TPC>
+
+  <TPC name="VTPC2">
+    <centerX unit="cm"> 0.391564 </centerX>
+    <centerY unit="cm"> 0.896943 </centerY>
+    <centerZ unit="cm"> -0.780333 </centerZ>
+    <rotAngleX unit="deg"> -0.0119642 </rotAngleX>
+    <rotAngleY unit="deg">  0.212211 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.224779 </rotAngleZ>
+  </TPC>
+
+  <TPC name="MTPCL">
+    <centerX unit="cm"> 198.801 </centerX>
+    <centerY unit="cm"> -0.0573665 </centerY>
+    <centerZ unit="cm"> 547.292 </centerZ>
+    <rotAngleX unit="deg"> 0.0118029 </rotAngleX>
+    <rotAngleY unit="deg"> 0.922654 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.008021 </rotAngleZ>
+  </TPC>
+
+  <TPC name="MTPCR">
+    <centerX unit="cm"> -198.7 </centerX>
+    <centerY unit="cm"> 1.38512 </centerY>
+    <centerZ unit="cm"> 546.349 </centerZ>
+    <rotAngleX unit="deg"> 0.0181789 </rotAngleX>
+    <rotAngleY unit="deg"> -0.91223 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.165341 </rotAngleZ>
+  </TPC>
+
+  <TPC name="GTPC">
+    <centerX unit="cm"> 0.29 </centerX>
+    <centerY unit="cm"> -7.08 </centerY>
+    <centerZ unit="cm"> -189.5 </centerZ>
+    <rotAngleX unit="deg"> -0.05 </rotAngleX>
+    <rotAngleY unit="deg"> 0.15 </rotAngleY>
+    <rotAngleZ unit="deg"> -0.1 </rotAngleZ>
+  </TPC>
+
+  <TPC name="FTPC1">
+    <centerX unit="cm"> 0.22993 </centerX>
+    <centerY unit="cm"> -1.30389 </centerY>
+    <centerZ unit="cm"> 320.567 </centerZ>
+    <rotAngleX unit="deg"> 0.143736 </rotAngleX>
+    <rotAngleY unit="deg"> 0.500823 </rotAngleY>
+    <rotAngleZ unit="deg"> 179.927 </rotAngleZ>
+  </TPC>
+
+  <TPC name="FTPC2">
+    <centerX unit="cm"> 0.292704 </centerX>
+    <centerY unit="cm"> 0.133812 </centerY>
+    <centerZ unit="cm"> 813.611 </centerZ>
+    <rotAngleX unit="deg"> -0.114648 </rotAngleX>
+    <rotAngleY unit="deg"> -0.228838 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.0572439 </rotAngleZ>
+  </TPC>
+
+  <TPC name="FTPC3">
+    <centerX unit="cm"> -0.660649 </centerX>
+    <centerY unit="cm"> -2.54181 </centerY>
+    <centerZ unit="cm"> 882.94 </centerZ>
+    <rotAngleX unit="deg"> -0.271797 </rotAngleX>
+    <rotAngleY unit="deg"> 0.0715474 </rotAngleY>
+    <rotAngleZ unit="deg"> 179.933 </rotAngleZ>
+  </TPC>
+
+  <TPC name="LMPDJD">
+    <centerX unit="cm"> 0.3313 </centerX>
+    <centerY unit="cm"> -0.710137 </centerY>
+    <centerZ unit="cm"> -583.004 </centerZ>
+    <rotAngleX unit="deg"> 0.0579896 </rotAngleX>
+    <rotAngleY unit="deg"> 74.7345 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.174902 </rotAngleZ>
+  </TPC>
+
+  <TPC name="LMPDJU">
+    <centerX unit="cm"> 0.3313 </centerX>
+    <centerY unit="cm"> -0.710137 </centerY>
+    <centerZ unit="cm"> -583.004 </centerZ>
+    <rotAngleX unit="deg"> 0.0579896 </rotAngleX>
+    <rotAngleY unit="deg"> 134.735 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.174902 </rotAngleZ>
+  </TPC>
+
+  <TPC name="LMPDSU">
+    <centerX unit="cm"> -0.884765 </centerX>
+    <centerY unit="cm"> -0.709468 </centerY>
+    <centerZ unit="cm"> -583.091 </centerZ>
+    <rotAngleX unit="deg"> 0.0579896 </rotAngleX>
+    <rotAngleY unit="deg"> 229.49 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.174902 </rotAngleZ>
+  </TPC>
+
+  <TPC name="LMPDSD">
+    <centerX unit="cm"> -0.884765 </centerX>
+    <centerY unit="cm"> -0.709468 </centerY>
+    <centerZ unit="cm"> -583.091 </centerZ>
+    <rotAngleX unit="deg"> 0.0579896 </rotAngleX>
+    <rotAngleY unit="deg"> 289.491 </rotAngleY>
+    <rotAngleZ unit="deg"> 0.174902 </rotAngleZ>
+  </TPC>
+
+  <TPC name="LMPDP">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="cm"> -610 </centerZ>
+    <rotAngleX unit="deg"> 0 </rotAngleX>
+    <rotAngleY unit="deg"> 0 </rotAngleY>
+    <rotAngleZ unit="deg"> 0 </rotAngleZ>
+  </TPC>
+
+  <TPC name="LTT">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="cm"> -583 </centerZ>
+    <rotAngleX unit="deg"> 0 </rotAngleX>
+    <rotAngleY unit="deg"> 0 </rotAngleY>
+    <rotAngleZ unit="deg"> 180.0 </rotAngleZ>
+  </TPC>
+  
+</TPCAlignmentGeometryFixedManager>

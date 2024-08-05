@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Taken from V11B data version. -->
+
+<TPCChamberT0FixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="[SCHEMAPATH]/TPCChamberT0FixedManager.xsd">
+
+  <TPC name="VTPC1">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="VTPC2">
+    <t0 unit="nanosecond"> 119.427 </t0>
+  </TPC>
+
+  <TPC name="MTPCL">
+    <t0 unit="nanosecond"> 0.0 </t0>
+  </TPC>
+
+  <TPC name="MTPCR">
+    <t0 unit="nanosecond"> 85.6712 </t0>
+  </TPC>
+
+  <TPC name="GTPC">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <!-- Yoshikazu Nagai: dummy value -->
+  <TPC name="FTPC1">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <!-- Yoshikazu Nagai: dummy value -->
+  <TPC name="FTPC2">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <!-- Yoshikazu Nagai: dummy value -->
+  <TPC name="FTPC3">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="LMPDJD">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="LMPDJU">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="LMPDSU">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="LMPDSD">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="LMPDP">
+    <t0 unit="nanosecond"> 0 </t0>
+  </TPC>
+
+  <TPC name="LTT">
+    <t0 unit="nanosecond"> 0.0 </t0>
+  </TPC>
+  
+</TPCChamberT0FixedManager>

@@ -1,0 +1,456 @@
+\documentclass[11pt]{beamer}
+\usepackage{xcolor}
+\usepackage{multimedia}
+\usepackage{hyperref}
+%\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[alsoload=physical]{siunitx}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{xkeyval}
+\usepackage{subfigure}
+\graphicspath{{./plots/}}
+
+
+\title[QA]{QA Report}
+\date{\today}
+
+\setbeamersize{text margin left=1mm,text margin right=1mm} 
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{General}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{TDAQQA_TPCBusyTime}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{MHTDC}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TDAQQA_T1MHTDC} 
+\includegraphics[width=0.24\textwidth]{TDAQQA_T2MHTDC} 
+\includegraphics[width=0.24\textwidth]{TDAQQA_T3MHTDC} 
+\includegraphics[width=0.24\textwidth]{TDAQQA_T4MHTDC} \\
+\includegraphics[width=0.24\textwidth]{TDAQQA_T1Counts} 
+\includegraphics[width=0.24\textwidth]{TDAQQA_T2Counts} 
+\includegraphics[width=0.24\textwidth]{TDAQQA_T3Counts} 
+\includegraphics[width=0.24\textwidth]{TDAQQA_T4Counts} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{MHTDC}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{TDAQQA_S1MHTDC} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_S1Counts} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_EventComposition} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beam Counter Amplitudes}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{TDAQQA_S1_1Amplitude} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_S1_2Amplitude}
+\includegraphics[width=0.31\textwidth]{TDAQQA_S2Amplitude} \\
+\includegraphics[width=0.31\textwidth]{TDAQQA_S1_3Amplitude}
+\includegraphics[width=0.31\textwidth]{TDAQQA_S1_4Amplitude}
+\includegraphics[width=0.31\textwidth]{TDAQQA_S3Amplitude} \\
+\includegraphics[width=0.31\textwidth]{TDAQQA_S4Amplitude}
+\includegraphics[width=0.31\textwidth]{TDAQQA_S5Amplitude} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_V0Amplitude} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beam Counter Amplitudes}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{TDAQQA_V1Amplitude} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_V1pAmplitude}
+\includegraphics[width=0.31\textwidth]{TDAQQA_PSDAmplitude} \\
+\includegraphics[width=0.31\textwidth]{TDAQQA_Ced6Amplitude}
+\includegraphics[width=0.31\textwidth]{TDAQQA_Ced7Amplitude} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_Ced8Amplitude} \\
+\includegraphics[width=0.31\textwidth]{TDAQQA_THCdAmplitude} 
+\includegraphics[width=0.31\textwidth]{TDAQQA_THCaAmplitude} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beam Counter 2D}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{BPDQA_S1BeamCounters2D} 
+\includegraphics[width=0.31\textwidth]{BPDQA_S2BeamCounters2D} 
+\includegraphics[width=0.31\textwidth]{BPDQA_S3BeamCounters2D}\\ 
+\includegraphics[width=0.31\textwidth]{BPDQA_S4BeamCounters2D} 
+\includegraphics[width=0.31\textwidth]{BPDQA_S5BeamCounters2D} 
+\includegraphics[width=0.31\textwidth]{BPDQA_V0BeamCounters2D}\\
+\includegraphics[width=0.31\textwidth]{BPDQA_V1BeamCounters2D} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD1xProfile1D}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD2xProfile1D}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD3xProfile1D} \\
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD1yProfile1D}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD2yProfile1D}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD3yProfile1D} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD1Profile2D}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD2Profile2D}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD3Profile2D} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD1xBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD2xBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD3xBeamEmittance} \\ 
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD1yBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD2yBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPDQA_BPD3yBeamEmittance} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamXZ}
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamYZ}
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamRMSX}
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamRMSY}
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamTracksXQuantiles1090}
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamTracksYQuantiles1090}\\
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamTracksXQuantiles2080}
+\includegraphics[width=0.45\textwidth]{BPDQA_BeamTracksYQuantiles2080}
+\end{figure}
+\end{frame}
+
+\begin{frame}{PSD T1}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{PSDQA_psdModSectScopeT1}
+\includegraphics[width=0.45\textwidth]{PSDQA_psdFrontViewT1} \\
+\includegraphics[width=0.45\textwidth]{PSDQA_psdEnergyCorrT1}
+\end{figure}
+\end{frame}
+
+\begin{frame}{PSD T2}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{PSDQA_psdModSectScopeT2}
+\includegraphics[width=0.45\textwidth]{PSDQA_psdFrontViewT2} \\
+\includegraphics[width=0.45\textwidth]{PSDQA_psdEnergyCorrT2}
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{TOFFQualityAssessmentKA_hitXY}
+\includegraphics[width=0.4\textwidth]{TOFFQualityAssessmentKA_scintillatorOccupancy} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 0 - 7}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop0}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop1}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop2}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop3} \\ 
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom0}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom1}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom2}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom3} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop4}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop5}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop6}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop7} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom4}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom5}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom6}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom7} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 8 - 15}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop8}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop9}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop10}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop11} \\ 
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom8}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom9}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom10}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom11} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop12}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop13}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop14}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop15} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom12}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom13}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom14}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom15} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 16 - 23}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop16}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop17}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop18}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop19} \\ 
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom16}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom17}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom18}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom19} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop20}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop21}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop22}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop23} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom20}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom21}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom22}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom23} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 24 - 31}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop24}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop25}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop26}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop27} \\ 
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom24}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom25}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom26}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom27} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop28}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop29}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop30}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeTop31} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom28}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom29}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom30}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeBottom31} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Correlation, Scintillators 0 - 15}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator0}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator1}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator2}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator3} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator4}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator5}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator6}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator7} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator8}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator9}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator10}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator11} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator12}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator13}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator14}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator15} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Correlation, Scintillators 16 - 31}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator16}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator17}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator18}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator19} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator20}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator21}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator22}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator23} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator24}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator25}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator26}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator27} \\
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator28}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator29}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator30}
+\includegraphics[width=0.24\textwidth]{TOFFQualityAssessmentKA_pmtAmplitudeCorrelationScintillator31} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{MRPC Time, Top}
+  \begin{figure}
+    \begin{columns}
+      \begin{column}{.33\textheight}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane10Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane11Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane12Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane13Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane14Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane15Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane16Top}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane17Top}
+      \end{column}
+      \begin{column}{.33\textheight}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane4Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane5Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane6Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane7Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane8Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane9Top}
+      \end{column}
+      \begin{column}{.33\textheight}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane0Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane1Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane2Top}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane3Top}
+      \end{column}
+    \end{columns}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{MRPC Time, Bottom}
+  \begin{figure}
+    \begin{columns}
+      \begin{column}{.33\textheight}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane10Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane11Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane12Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane13Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane14Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane15Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane16Bottom}
+        \includegraphics[height=.10\textheight]{MRPCQA_timeMRPCLPlane17Bottom}
+      \end{column}
+      \begin{column}{.33\textheight}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane4Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane5Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane6Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane7Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane8Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane9Bottom}
+      \end{column}
+      \begin{column}{.33\textheight}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane0Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane1Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane2Bottom}
+        \includegraphics[height=.12\textheight]{MRPCQA_timeMRPCLPlane3Bottom}
+      \end{column}
+    \end{columns}
+  \end{figure}
+\end{frame}
+
+%\begin{frame}{MRPC Amplitude, Top}
+  %\begin{figure}
+    %\begin{columns}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane10Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane11Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane12Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane13Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane14Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane15Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane16Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane17Top}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane4Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane5Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane6Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane7Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane8Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane9Top}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane0Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane1Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane2Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane3Top}
+      %\end{column}
+    %\end{columns}
+  %\end{figure}
+%\end{frame}
+
+%\begin{frame}{MRPC Amplitude, Bottom}
+  %\begin{figure}
+    %\begin{columns}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane10Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane11Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane12Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane13Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane14Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane15Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane16Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane17Bottom}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane4Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane5Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane6Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane7Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane8Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane9Bottom}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane0Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane1Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane2Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane3Bottom}
+      %\end{column}
+    %\end{columns}
+  %\end{figure}
+%\end{frame}
+
+\begin{frame}{MRPC}
+  \begin{figure}
+    \includegraphics[width=.9\textwidth]{MRPCQA_occupancyMRPCL}
+  \end{figure}
+\end{frame}
+
+\end{document}

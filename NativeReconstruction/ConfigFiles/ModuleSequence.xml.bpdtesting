@@ -1,0 +1,30 @@
+<!-- Module sequence for semi-online quality assessment chain -->
+
+
+<sequenceFile
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/ModuleSequence.xsd'>
+
+  <enableTiming/>
+  <enableModuleTracing/>
+
+  <moduleControl>
+
+    <loop numTimes="8000">
+      <!-- Reconstruction Modules -->
+      <module> EventFileReaderSG               </module>
+      <module> DRS4CalibratorKA                </module>
+      <module> DelayWireChamberReconstructorLR </module>
+      <!--module> BPDReconstructorSG              </module-->
+
+      <!--Increasing number of TPC time bin slices, cannot use module since it requires 256-->
+      <!--module> TPCWienerFiltererAL             </module-->
+
+      <!--module> TDAQQA                          </module-->
+      <module> BPDQA                          </module>
+<!--      <module> QASummarizerSG           </module>-->
+    </loop>
+
+  </moduleControl>
+
+</sequenceFile>

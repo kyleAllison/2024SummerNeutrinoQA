@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE SiliconGeometryXMLManager SYSTEM '[CONFIGDIR]/ShineGeneral.dtd'>
+
+<SiliconGeometryXMLManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/SiliconGeometryXMLManager.xsd'>
+
+  <XMLFile runStart="1" runStop="99999"> MAVD_nominal2021.xml </XMLFile>  
+
+</SiliconGeometryXMLManager>

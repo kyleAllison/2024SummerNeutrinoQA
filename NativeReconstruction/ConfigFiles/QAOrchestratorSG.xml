@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module QAOrchestratorSG -->
+
+<QAOrchestratorSG
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/QAOrchestratorSG.xsd'>
+
+  <!-- Verbosity: default, silent, terse, verbose, annoying -->
+  <verbosity> verbose </verbosity>
+
+  <!-- number of events between reports (zero to report only at the end). -->
+  <nEventsBetweenReports> 1 </nEventsBetweenReports>
+
+  <!-- boolean that determines whether to zero histograms after report. -->
+  <annulateAfterReport> 1 </annulateAfterReport>
+
+</QAOrchestratorSG>

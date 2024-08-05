@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Taken from settings of 2012 Autumn 158GeV/c p+Pb run with LMPD,
+     1mm target, field on, assumed 0 target angle on support. -->
+
+<TargetConfigFixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/TargetConfigFixedManager.xsd'
+  rotAngleOrder="y-z-x"
+  coordinateSystem="global">
+
+  <Target>
+    <materialName> C </materialName>
+    <materialZ> 6 </materialZ>
+    <materialA> 12 </materialA>
+    <materialDensity unit="g/cm3"> 1.81  </materialDensity>
+    <materialInteractionLength unit="g/cm2"> 85.8 </materialInteractionLength>
+    <materialMolarMass unit="g/mol"> 12.0107  </materialMolarMass>
+    <crossSectionShape> square </crossSectionShape>
+    <width unit="cm"> 1.6 </width>
+    <length unit="cm"> 150 </length>
+    <surveyZUncertainty unit="cm"> 0.05 </surveyZUncertainty>
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="cm"> -665 </centerZ>
+    <rotAngleX unit="deg"> 0 </rotAngleX>
+    <rotAngleY unit="deg"> 0 </rotAngleY>
+    <rotAngleZ unit="deg"> 0 </rotAngleZ>
+  </Target>
+
+</TargetConfigFixedManager>

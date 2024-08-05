@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BeamCounterPositionFixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/BeamCounterPositionFixedManager.xsd'
+  coordinateSystem="global">
+
+  <BeamCounter id="S1">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -36.42 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="S2">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -14.42 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="S3">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -7.533 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="S3p">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -5.954 </centerZ>  
+  </BeamCounter>  
+
+  <BeamCounter id="S4">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -2.11 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="S5">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> 9.8 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="V0">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -14.16 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="V0p">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -14 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="V1">
+    <centerX unit="cm"> 0 </centerX>
+    <centerY unit="cm"> 0 </centerY>
+    <centerZ unit="m"> -6.72 </centerZ>
+  </BeamCounter>
+
+  <BeamCounter id="V1p">
+    <absent/>
+  </BeamCounter>
+
+  <BeamCounter id="SArtificial">
+    <absent/>
+  </BeamCounter>
+
+</BeamCounterPositionFixedManager>

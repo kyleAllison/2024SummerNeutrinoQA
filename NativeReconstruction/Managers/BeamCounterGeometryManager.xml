@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<BeamCounterGeometryManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/BeamCounterGeometryManager.xsd'>
+
+  <BeamCounter id="S1">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> square </crossSectionShape>
+    <width unit="cm"> 6 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+
+  <BeamCounter id="S2">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 2.8 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+
+  <BeamCounter id="S3">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 1.2 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+  <BeamCounter id="S3p">
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 1.2 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+
+  <BeamCounter id="S4">
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 2 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+
+  <BeamCounter id="S5">
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 2 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+
+  <BeamCounter id="V0">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 8 </width>
+    <length unit="cm"> 1 </length>
+    <holeDiameter unit="cm"> 1 </holeDiameter>
+  </BeamCounter>
+
+  <BeamCounter id="V0p">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> square </crossSectionShape>
+    <width unit="cm"> 30 </width>
+    <length unit="cm"> 1 </length>
+    <holeDiameter unit="cm"> 2 </holeDiameter>
+  </BeamCounter>
+
+  <BeamCounter id="V1">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> square </crossSectionShape>
+    <width unit="cm"> 10 </width>
+    <length unit="cm"> 1 </length>
+    <holeDiameter unit="cm"> 0.8 </holeDiameter>
+  </BeamCounter>
+
+  <BeamCounter id="V1p">
+    <!-- FIXME - is this indeed plastic? -->
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> square </crossSectionShape>
+    <width unit="cm"> 30 </width>
+    <length unit="cm"> 1 </length>
+    <holeDiameter unit="cm"> 2 </holeDiameter>
+  </BeamCounter>
+
+  <BeamCounter id="SArtificial">
+    <material> Scintillating Plastic </material>
+    <crossSectionShape> circle </crossSectionShape>
+    <width unit="cm"> 500 </width>
+    <length unit="cm"> 0.5 </length>
+  </BeamCounter>
+
+</BeamCounterGeometryManager>

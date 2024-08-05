@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration telling which Manager uses what input file. -->
+
+<defaultConfig>
+
+  <!-- Manager precedence list. -->
+  <configLink
+    id         = "DManagerRegister"
+    xlink:href = "./Managers/DManagerRegisterStaticConfig.xml"/>
+
+  <!-- Manager configs are below. -->
+
+  <!-- For getting run settings from book-keeping. -->
+
+  <configLink
+    id         = "RunLogTextManager"
+    xlink:href = "&configDir;/RunLogTextManager.xml"/>
+
+  <configLink
+    id         = "RunLogHttpManager"
+    xlink:href = "&configDir;/RunLogHttpManager.xml"/>
+
+  <configLink
+    id         = "RunFixedSettingsManager"
+    xlink:href = "&configDir;/RunFixedSettingsManager.xml"/>
+
+  <!-- Target material and alignment info. -->
+  <configLink
+    id         = "TargetConfigFixedManager"
+    xlink:href = "&configDir;/TargetConfigFixedManager.xml"/>
+
+  <!-- Magnetic field finetuning scale factor. -->
+  <configLink
+    id         = "MagneticFieldFixScaleFactorManager"
+    xlink:href = "&configDir;/MagneticFieldFixScaleFactorManager.xml"/>
+
+  <!-- Magnetic field maps list (exceptionally, this is not a Manager!). -->
+  <configLink
+    id         = "MagneticField"
+    xlink:href = "&configDir;/MagneticField.xml"/>
+
+  <!-- For new DAQ channel mapping. -->
+
+  <configLink
+    id         = "PteroDAQTriggerXMLManager"
+    xlink:href = "&dataDir;/PteroDAQ/PteroDAQTriggerConfig.xml"/>
+
+  <configLink
+    id         = "PteroDAQTPCFixedManager"
+    xlink:href = "&configDir;/PteroDAQTPCFixedManager.xml"/>
+
+  <configLink
+    id         = "PteroDAQGRCFixedManager"
+    xlink:href = "&configDir;/PteroDAQGRCFixedManager.xml"/>
+ <configLink                                                                                       
+   id         = "PteroDAQTPCMaskManager"                                                          
+   xlink:href = "&configDir;/PteroDAQTPCMaskManager.xml"/> 
+  <!-- Calibration constants for Multi-Hit TDC. -->
+
+  <configLink
+    id         = "MHTDCCalibrationFixedManager"
+    xlink:href = "&configDir;/MHTDCCalibrationFixedManager.xml"/>
+
+  <!-- Calibration constants for DRS4 based detector channels. -->
+
+  <configLink
+    id         = "DRS4CalibrationManager"
+    xlink:href = "./Managers/DRS4CalibrationManager.xml"/>
+
+  <configLink
+    id         = "DRS4CalibrationFixedManager"
+    xlink:href = "&configDir;/DRS4CalibrationFixedManager.xml"/>
+
+  <!-- Beam counter properties. -->
+
+  <configLink
+    id         = "BeamCounterGeometryManager"
+    xlink:href = "&configDir;/BeamCounterGeometryManager.xml"/>
+
+  <configLink
+    id         = "BeamCounterPositionFixedManager"
+    xlink:href = "&configDir;/BeamCounterPositionFixedManager.xml"/>
+
+  <configLink
+    id         = "BeamCounterDRSChannelManager"
+    xlink:href = "&configDir;/BeamCounterDRSChannelManager.xml"/>
+
+  <configLink
+    id         = "BeamCounterTimingFixedManager"
+    xlink:href = "&configDir;/BeamCounterTimingFixedManager.xml"/>
+
+  <!-- BPD properties. -->
+
+  <configLink
+    id         = "BPDStaticInfoXMLManager"
+    xlink:href = "./Managers/BPDStaticInfo.xml"/>
+
+  <configLink
+    id         = "BPDFixedManager"
+    xlink:href = "&configDir;/BPDFixedManager.xml"/>
+
+  <configLink
+    id         = "BPDStripGainFixedManager"
+    xlink:href = "&configDir;/BPDStripGainFixedManager.xml"/>
+
+  <!-- TPC properties. -->
+
+  <configLink
+    id         = "TPCWienerFilterManager"
+    xlink:href = "&configDir;/TPCWienerFilterManager.xml"/>
+
+  <configLink
+    id         = "TPCPhaseCalibrationFixedManager"
+    xlink:href = "&configDir;/TPCPhaseCalibrationFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCGlobalT0FixedManager"
+    xlink:href = "&configDir;/TPCGlobalT0FixedManager.xml"/>
+
+  <configLink
+    id         = "TPCChamberT0FixedManager"
+    xlink:href = "&configDir;/TPCChamberT0FixedManager.xml"/>
+
+  <configLink
+    id         = "TPCPadT0FixedManager"
+    xlink:href = "&configDir;/TPCPadT0FixedManager.xml"/>
+
+  <configLink
+    id         = "TPCPadGainFixedManager"
+    xlink:href = "&configDir;/TPCPadGainFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCAlignmentGeometryFixedManager"
+    xlink:href = "&configDir;/TPCAlignmentGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCPadGeometryFixedManager"
+    xlink:href = "&configDir;/TPCPadGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCDriftVelocityFixedManager"
+    xlink:href = "&configDir;/TPCDriftVelocityFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCSlowControlFixedManager"
+    xlink:href = "&configDir;/TPCSlowControlFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCChargeLossCorrectionFixedManager"
+    xlink:href = "&configDir;/TPCChargeLossCorrectionFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCResidualsFixedManager"
+    xlink:href = "&configDir;/TPCResidualsFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCdEdxCalibConstantsTextManager"
+    xlink:href = "&configDir;/TPCdEdxCalibConstantsTextManager.xml"/>
+
+  <!-- GRC properties. -->
+
+  <configLink
+    id         = "GRCAlignmentGeometryFixedManager"
+    xlink:href = "&configDir;/GRCAlignmentGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "GRCInternalGeometryFixedManager"
+    xlink:href = "&configDir;/GRCInternalGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "GRCWireGainFixedManager"
+    xlink:href = "&configDir;/GRCWireGainFixedManager.xml"/>
+
+  <!-- Vertex Detector (VD) properties. -->
+
+  <configLink
+    id         = "SiliconStaticInfoXMLManager"
+    xlink:href = "&configDir;/SiliconStaticInfoXMLManager.xml"/>
+
+  <configLink
+    id         = "SiliconNoiseFixedManager"
+    xlink:href = "&configDir;/SiliconNoiseFixedManager.xml"/>
+
+  <configLink
+    id         = "SiliconTypeFixedManager"
+    xlink:href = "&configDir;/SiliconTypeFixedManager.xml"/>
+
+  <configLink
+    id         = "SiliconGeometryXMLManager"
+    xlink:href = "./Managers/SiliconGeometryXMLManager.xml"/>
+
+  <configLink
+    id         = "PSDCalibFixedManager"
+    xlink:href = "&configDir;/PSDCalibFixedManager.xml"/>
+
+  <configLink
+    id         = "PSDStaticInfoXMLManager"
+    xlink:href = "&configDir;/PSDStaticInfo.xml"/>
+
+  <configLink
+    id         = "PSDGeometryFixedManager"
+    xlink:href = "&configDir;/PSDGeometryFixedManager.xml"/>
+
+  <!-- TOF properties. -->
+  <configLink
+    id         = "TOFAlignmentGeometryFixedManager"
+    xlink:href = "&configDir;/TOFAlignmentGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "TOFInternalGeometryManager"
+    xlink:href = "&configDir;/TOFInternalGeometryManager.xml"/>
+
+  <configLink
+    id         = "TOFStatusManager"
+    xlink:href = "&configDir;/TOFStatusManager.xml"/>
+
+  <configLink
+    id         = "TOFStaticGeometryManager"
+    xlink:href = "&configDir;/TOFStaticGeometryManager.xml"/>
+
+  <configLink
+    id         = "TOFFScintillatorFixedManager"
+    xlink:href = "&configDir;/TOFFScintillatorFixedManager.xml"/>
+
+  <configLink
+    id         = "TOFFDRS4ChannelManager"
+    xlink:href = "&configDir;/TOFFDRS4ChannelManager.xml"/>
+
+  <configLink
+    id         = "MRPCStaticInfoManager"
+    xlink:href = "&configDir;/MRPCStaticInfo.xml"/>
+
+  <!-- For simulation. -->
+
+  <configLink
+    id         = "G4MaterialFixedManager"
+    xlink:href = "&configDir;/G4MaterialFixedManager.xml"/>
+
+  <configLink
+    id         = "GasBagGeometryFixedManager"
+    xlink:href = "&configDir;/GasBagGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "GasBagStatusFixedManager"
+    xlink:href = "&configDir;/GasBagStatusFixedManager.xml"/>
+
+  <configLink
+    id         = "MagnetAlignmentFixedManager"
+    xlink:href = "&configDir;/MagnetAlignmentFixedManager.xml"/>
+
+  <configLink
+    id         = "MagnetGeometryFixedManager"
+    xlink:href = "&configDir;/MagnetGeometryFixedManager.xml"/>
+
+  <configLink
+    id         = "TPCTimeBinModeXMLManager"
+    xlink:href = "&configDir;/TPCTimeBinModeXMLManager.xml"/>
+
+</defaultConfig>

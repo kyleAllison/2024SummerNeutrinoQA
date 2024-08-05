@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Taken from V11B data version. -->
+
+<TPCGlobalT0FixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="[SCHEMAPATH]/TPCGlobalT0FixedManager.xsd">
+
+  <globalT0 unit="nanosecond"> -798.697 </globalT0>
+
+</TPCGlobalT0FixedManager>

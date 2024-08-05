@@ -1,0 +1,48 @@
+Make (Sasha said he will do this) and link DRS voltage + time calibration file
+
+More accurate target position and geometry
+
+Vertexing?
+
+LTT:
+Once Andras is done with the tracking and the QA for the LTT, it would be good to add in:
+   1. Take LTT tracks, extrapolate them back as straight lines to the target center (x, y)
+      and plot their z-position. Add this to the
+      DetectorCorrelationQA module (Similar to other plots done for VTPCs)
+   2. Number of VTPC1 clusters vs. Number of LTT clusters for T1 and T2 in DetectorCorrelationQA
+   3. Number of LTT tracks by event for T1 and T2 in DetectorCorrelationQA
+   4. Number of VTPC1 tracks vs. Number of LTT tracks for T1 T2 in DetectorCorrelation
+   5. Some kind of LTT-VTPC1 track merging test? Not sure what would be a good test of this
+
+
+
+
+At the end of the run:
+Add the 2024NeutrinoOfflineQA NativeReconstruction to
+Applications/Examples2022Plus/Monitoring/2024SummerNeutrinoQA in shine and add in code-guarding that
+checks against a test 2 event chunk that the reconstruction runs properly
+
+
+
+
+
+Done:
+
+LTT:
+   0. Cluster level QA to offlineQA if Andras doesn't do this
+
+Fix master DetectorCorrelation.cc or make new neutrino one
+
+DetectorCorrelationQA.cc had a map::at() error somewhere for:
+run-042842x00170_vbuf1_2023-08-16_07-25-35.pteraw
+
+Add  S3 and S3Prime beam profiles
+
+Special DRS runs: 44055: Zero suppression
+44056 No zero suppression
+there are two new runs in /eos/experiment/na61/data/tests_2024
+The run 44055 is with DRS (counters + mRPC + TOFF) and with
+zero-suppression settings like in previous year.
+The run 44066 is with DRS and without zero-suppression.
+The calibration was done earlier today. The raw file for the calibration is:
+run-000001x00001_2024-07-08_13-03-21.pteraw

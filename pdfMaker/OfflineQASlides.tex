@@ -1,0 +1,1212 @@
+\documentclass[11pt]{beamer}
+\usepackage{xcolor}
+\usepackage{multimedia}
+\usepackage{hyperref}
+%\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{booktabs}
+% Can't use siunitx on crontab
+%\usepackage[alsoload=physical]{siunitx}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{xkeyval}
+%\usepackage{subfigure}
+\graphicspath{{./plots/}}
+% Can't use comment on crontab
+%\usepackage{comment}
+\usepackage{geometry}
+
+\title{QA Report}
+\author{Offline QA}
+\date{\today}
+
+% logo 
+\titlegraphic{\includegraphics[width=4cm]{logo}}
+
+\setbeamersize{text margin left=1mm,text margin right=1mm}
+
+\begin{document}  
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\setbeamersize{text margin left=1mm,text margin right=1mm}
+
+\begin{frame}{Trigger Ratios}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{S1Intensity}
+\includegraphics[width=0.45\textwidth]{T2T1Ratio} \\
+\includegraphics[width=0.45\textwidth]{T1T3Ratio}
+\includegraphics[width=0.45\textwidth]{T4T3Ratio} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{Trigger Ratios}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{T2T1Ratio_Tightened} 
+\includegraphics[width=0.45\textwidth]{T1T3Ratio_Tightened} \\
+\includegraphics[width=0.45\textwidth]{T4T3Ratio_Tightened} 
+\includegraphics[width=0.45\textwidth]{T1S1Ratio_Tightened} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{General}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{runNumberGraph}
+\includegraphics[width=0.45\textwidth]{eventIdGraph} \\
+\includegraphics[width=0.45\textwidth]{TPCBusyTime}
+\includegraphics[width=0.45\textwidth]{T1S1Ratio} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPD1xProfile1D}
+\includegraphics[width=0.32\textwidth]{BPD2xProfile1D}
+\includegraphics[width=0.32\textwidth]{BPD3xProfile1D} \\
+\includegraphics[width=0.32\textwidth]{BPD1yProfile1D}
+\includegraphics[width=0.32\textwidth]{BPD2yProfile1D}
+\includegraphics[width=0.32\textwidth]{BPD3yProfile1D} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPD1Profile2D}
+\includegraphics[width=0.32\textwidth]{BPD2Profile2D}
+\includegraphics[width=0.32\textwidth]{BPD3Profile2D} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD Emittance}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPD1xBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPD2xBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPD3xBeamEmittance} \\ 
+\includegraphics[width=0.32\textwidth]{BPD1yBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPD2yBeamEmittance}
+\includegraphics[width=0.32\textwidth]{BPD3yBeamEmittance} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{BPD Residuals}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{BPD1xResiduals}
+\includegraphics[width=0.32\textwidth]{BPD2xResiduals}
+\includegraphics[width=0.32\textwidth]{BPD3xResiduals} \\
+\includegraphics[width=0.32\textwidth]{BPD1yResiduals}
+\includegraphics[width=0.32\textwidth]{BPD2yResiduals}
+\includegraphics[width=0.32\textwidth]{BPD3yResiduals}
+\end{figure}
+\end{frame} 
+
+\begin{frame}{Beam Counters}
+\begin{figure}                                                                                      
+\centering                                                                                          
+\includegraphics[width=0.32\textwidth]{S1BeamCounters2D}                                               
+\includegraphics[width=0.32\textwidth]{S2BeamCounters2D}                                               
+\includegraphics[width=0.32\textwidth]{S3pBeamCounters2D}\\
+\includegraphics[width=0.32\textwidth]{S3BeamCounters2D}
+\includegraphics[width=0.32\textwidth]{S4BeamCounters2D} 
+\includegraphics[width=0.32\textwidth]{S5BeamCounters2D} 
+\end{figure}                                                                                        
+\end{frame}  
+
+\begin{frame}{Beam Counters}                                                                        
+\begin{figure}   
+\includegraphics[width=0.32\textwidth]{V0BeamCounters2D} 
+\includegraphics[width=0.32\textwidth]{V1BeamCounters2D} 
+\end{figure}                                                                                        
+\end{frame}  
+
+\begin{frame}{BPD - Beam line}  
+  \begin{figure}   
+    \centering  
+    \includegraphics[width=0.5\textwidth]{BeamXZ}  
+    \includegraphics[width=0.5\textwidth]{BeamYZ}  
+  \end{figure}  
+\end{frame} 
+
+\begin{frame}{BPD - Beam line}  
+  \begin{figure}   
+    \centering  
+    \includegraphics[width=0.5\textwidth]{BeamXZ_LogZ}  
+    \includegraphics[width=0.5\textwidth]{BeamYZ_LogZ}  
+  \end{figure}  
+\end{frame} 
+
+\begin{frame}{MHTDC}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{T1MHTDC} 
+\includegraphics[width=0.24\textwidth]{T2MHTDC} 
+\includegraphics[width=0.24\textwidth]{T3MHTDC} 
+\includegraphics[width=0.24\textwidth]{T4MHTDC} \\
+\includegraphics[width=0.24\textwidth]{T1Counts} 
+\includegraphics[width=0.24\textwidth]{T2Counts} 
+\includegraphics[width=0.24\textwidth]{T3Counts} 
+\includegraphics[width=0.24\textwidth]{T4Counts} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{MHTDC}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{S1MHTDC} 
+\includegraphics[width=0.31\textwidth]{S1Counts} 
+\includegraphics[width=0.31\textwidth]{EventComposition} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{Beam Counter Amplitudes}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{S1_1Amplitude} 
+\includegraphics[width=0.31\textwidth]{S1_2Amplitude}
+\includegraphics[width=0.31\textwidth]{S1_3Amplitude} \\
+\includegraphics[width=0.31\textwidth]{S1_4Amplitude} 
+\includegraphics[width=0.31\textwidth]{S2Amplitude}
+\includegraphics[width=0.31\textwidth]{S3Amplitude}  \\
+\includegraphics[width=0.31\textwidth]{S3pAmplitude} 
+\includegraphics[width=0.31\textwidth]{S4Amplitude} 
+\includegraphics[width=0.31\textwidth]{S5Amplitude} 
+\end{figure}                                                                                        
+\end{frame} 
+
+\begin{frame}{Beam Counter Amplitudes}
+\begin{figure}
+\centering
+\includegraphics[width=0.31\textwidth]{V0Amplitude}
+\includegraphics[width=0.31\textwidth]{V1Amplitude} 
+\includegraphics[width=0.31\textwidth]{V1pAmplitude} \\
+\includegraphics[width=0.31\textwidth]{PSDAmplitude} 
+\includegraphics[width=0.31\textwidth]{Ced6Amplitude}
+\includegraphics[width=0.31\textwidth]{Ced7Amplitude} \\ 
+\includegraphics[width=0.31\textwidth]{Ced8Amplitude} 
+\includegraphics[width=0.31\textwidth]{THCdAmplitude} 
+\includegraphics[width=0.31\textwidth]{THCaAmplitude} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC1 On-Time Hits}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{FWLocalX_GRC1}
+\includegraphics[width=0.45\textwidth]{PWPLocalY_GRC1} \\
+\includegraphics[width=0.45\textwidth]{FWMaxAmplitude_GRC1}
+\includegraphics[width=0.45\textwidth]{PWPMaxAmplitude_GRC1} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC1 Off-Time Hits}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{FWLocalXOffTime_GRC1}
+\includegraphics[width=0.45\textwidth]{PWPLocalYOffTime_GRC1} \\
+\includegraphics[width=0.45\textwidth]{FWMaxAmplitudeOffTime_GRC1}
+\includegraphics[width=0.45\textwidth]{PWPMaxAmplitudeOffTime_GRC1} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC2 On-Time Hits}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{FWLocalX_GRC2}
+\includegraphics[width=0.45\textwidth]{PWPLocalY_GRC2} \\
+\includegraphics[width=0.45\textwidth]{FWMaxAmplitude_GRC2}
+\includegraphics[width=0.45\textwidth]{PWPMaxAmplitude_GRC2} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC2 Off-Time Hits}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{FWLocalXOffTime_GRC2}
+\includegraphics[width=0.45\textwidth]{PWPLocalYOffTime_GRC2} \\
+\includegraphics[width=0.45\textwidth]{FWMaxAmplitudeOffTime_GRC2}
+\includegraphics[width=0.45\textwidth]{PWPMaxAmplitudeOffTime_GRC2} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC-Based TPC Drift Velocity Measurements}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{DYVsY_GRC1}
+\includegraphics[width=0.45\textwidth]{DYVsY_GRC2} \\
+%\includegraphics[width=0.45\textwidth]{DYVsYOffTime_GRC1}
+%\includegraphics[width=0.45\textwidth]{DYVsYOffTime_GRC2} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC-Based TPC Drift Velocity Measurements}
+\begin{figure}
+\centering
+%\includegraphics[width=0.45\textwidth]{dYVsY_MTPCRvsGRC}
+\includegraphics[width=0.45\textwidth]{dYVsY_VTPC2vsMTPCL} \\
+\includegraphics[width=0.45\textwidth]{dYVsY_VTPC2vsMTPCR}
+\includegraphics[width=0.45\textwidth]{dYVsY_VTPC1vsVTPC2} 
+\end{figure}
+\end{frame}
+
+\begin{frame}{GRC-Based TPC Drift Velocity Measurements}
+\begin{figure}
+\centering
+\includegraphics[width=0.23\textwidth]{vdriftReco_VTPC1}
+\includegraphics[width=0.23\textwidth]{vdriftReco_VTPC2} \\
+\includegraphics[width=0.23\textwidth]{vdriftReco_MTPCL}
+\includegraphics[width=0.23\textwidth]{vdriftReco_MTPCR} 
+\end{figure}
+\end{frame}
+
+%\begin{comment}
+%% \begin{frame}{PSD T1}
+%% \begin{figure}
+%% \centering
+%% \includegraphics[width=0.45\textwidth]{psdModSectScopeT1}
+%% \includegraphics[width=0.45\textwidth]{psdFrontViewT1} \\
+%% \includegraphics[width=0.45\textwidth]{psdEnergyCorrT1}
+%% \end{figure}
+%% \end{frame}
+
+%% \begin{frame}{PSD T2}
+%% \begin{figure}
+%% \centering
+%% \includegraphics[width=0.45\textwidth]{psdModSectScopeT2}
+%% \includegraphics[width=0.45\textwidth]{psdFrontViewT2} \\
+%% \includegraphics[width=0.45\textwidth]{psdEnergyCorrT2}
+%% \end{figure}
+%% \end{frame}
+%\end{comment}
+
+\begin{frame}{Vertices}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{SecondaryVerticesZ}
+\includegraphics[width=0.45\textwidth]{SecondaryVertexCount} \\
+\includegraphics[width=0.45\textwidth]{SecondaryVerticesXY}
+\includegraphics[width=0.45\textwidth]{SecondaryTrackCount} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{Vertices}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{SecondaryVerticesZVTPC1TargetIn}
+\includegraphics[width=0.45\textwidth]{SecondaryVerticesZVTPC1TargetOut}\\
+\includegraphics[width=0.45\textwidth]{TrackMomentum}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Vertices}
+  \begin{figure} 
+    \centering
+    \includegraphics[width=0.45\textwidth]{SecondaryVerticesZVTPC1TargetIn_LogY}  
+    \includegraphics[width=0.45\textwidth]{SecondaryVerticesZVTPC1TargetOut_LogY}
+  \end{figure}
+\end{frame} 
+
+\begin{frame}{Vertices}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{SecondaryVerticesZX}
+\includegraphics[width=0.4\textwidth]{SecondaryVerticesZY}
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{hitXY}
+\includegraphics[width=0.4\textwidth]{scintillatorOccupancy} \\
+\includegraphics[width=0.4\textwidth]{trackXY}
+\includegraphics[width=0.4\textwidth]{efficiencyXY}
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 0 - 7}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop0}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop1}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop2}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop3} \\ 
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom0}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom1}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom2}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom3} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop4}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop5}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop6}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop7} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom4}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom5}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom6}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom7} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 8 - 15}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop8}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop9}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop10}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop11} \\ 
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom8}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom9}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom10}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom11} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop12}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop13}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop14}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop15} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom12}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom13}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom14}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom15} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 16 - 23}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop16}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop17}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop18}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop19} \\ 
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom16}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom17}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom18}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom19} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop20}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop21}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop22}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop23} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom20}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom21}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom22}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom23} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Response, Scintillators 24 - 31}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop24}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop25}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop26}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop27} \\ 
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom24}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom25}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom26}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom27} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop28}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop29}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop30}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeTop31} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom28}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom29}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom30}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeBottom31} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Correlation, Scintillators 0 - 15}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator0}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator1}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator2}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator3} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator4}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator5}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator6}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator7} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator8}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator9}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator10}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator11} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator12}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator13}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator14}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator15} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{TOFF PMT Amplitude Correlation, Scintillators 16 - 31}
+\begin{figure}
+\centering
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator16}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator17}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator18}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator19} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator20}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator21}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator22}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator23} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator24}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator25}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator26}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator27} \\
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator28}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator29}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator30}
+\includegraphics[width=0.24\textwidth]{pmtAmplitudeCorrelationScintillator31} \\
+\end{figure}
+\end{frame}
+
+\begin{frame}{MRPC Time, Top}
+  \begin{center} 
+    \begin{table} 
+      \begin{tabular}{c c c c } 
+        & & \includegraphics[height=.10\textheight]{timeMRPCLPlane4Top} & \\ 
+        \includegraphics[height=.10\textheight]{timeMRPCLPlane10Top}&\includegraphics[height=.10\textheight]{timeMRPCLPlane11Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane5Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane0Top}\\ 
+        \includegraphics[height=.10\textheight]{timeMRPCLPlane12Top}&\includegraphics[height=.10\textheight]{timeMRPCLPlane13Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane6Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane1Top}\\ 
+     \includegraphics[height=.10\textheight]{timeMRPCLPlane14Top}&\includegraphics[height=.10\textheight]{timeMRPCLPlane15Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane7Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane2Top}\\ 
+       \includegraphics[height=.10\textheight]{timeMRPCLPlane16Top}&\includegraphics[height=.10\textheight]{timeMRPCLPlane17Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane8Top} & \includegraphics[height=.10\textheight]{timeMRPCLPlane3Top}\\ 
+        & & \includegraphics[height=.10\textheight]{timeMRPCLPlane9Top} & \\ 
+      \end{tabular} 
+    \end{table} 
+  \end{center} 
+
+\end{frame}
+
+\begin{frame}{MRPC, Mapping}
+ \begin{center}                                                                                    
+    \begin{table}                                                                                   
+      \begin{tabular}{c c c c }                                                                     
+        & & \includegraphics[height=.10\textheight]{mappingMRPCLPlane4} & \\                        
+        \includegraphics[height=.10\textheight]{mappingMRPCLPlane10}&\includegraphics[height=.10\textheight]{mappingMRPCLPlane11} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane5} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane0}\\ 
+       \includegraphics[height=.10\textheight]{mappingMRPCLPlane12}&\includegraphics[height=.10\textheight]{mappingMRPCLPlane13} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane6} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane1}\\ 
+       \includegraphics[height=.10\textheight]{mappingMRPCLPlane14}&\includegraphics[height=.10\textheight]{mappingMRPCLPlane15} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane7} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane2}\\ 
+       \includegraphics[height=.10\textheight]{mappingMRPCLPlane16}&\includegraphics[height=.10\textheight]{mappingMRPCLPlane17} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane8} & \includegraphics[height=.10\textheight]{mappingMRPCLPlane3}\\ 
+        & & \includegraphics[height=.10\textheight]{mappingMRPCLPlane9} & \\                        
+     \end{tabular}                                                                                 
+    \end{table}                                                                                     
+\end{center}  
+\end{frame}
+
+%\begin{frame}{MRPC Amplitude, Top}
+  %\begin{figure}
+    %\begin{columns}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane10Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane11Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane12Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane13Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane14Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane15Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane16Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane17Top}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane4Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane5Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane6Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane7Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane8Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane9Top}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane0Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane1Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane2Top}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane3Top}
+      %\end{column}
+    %\end{columns}
+  %\end{figure}
+%\end{frame}
+
+%\begin{frame}{MRPC Amplitude, Bottom}
+  %\begin{figure}
+    %\begin{columns}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane10Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane11Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane12Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane13Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane14Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane15Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane16Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane17Bottom}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane4Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane5Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane6Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane7Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane8Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane9Bottom}
+      %\end{column}
+      %\begin{column}{.33\textheight}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane0Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane1Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane2Bottom}
+        %\includegraphics[height=.12\textheight]{amplitudeMRPCLPlane3Bottom}
+      %\end{column}
+    %\end{columns}
+  %\end{figure}
+%\end{frame}
+
+\begin{frame}{MRPC}
+  \begin{figure}
+    \includegraphics[width=.9\textwidth]{occupancyMRPCL}
+  \end{figure}
+\end{frame}
+
+%\begin{frame}{Cross-detector correlations}
+  %\begin{figure}
+    %\includegraphics[width=.4\textwidth]{GlobalTracksVsPSDEnergy}
+    %\includegraphics[width=.4\textwidth]{GlobalTracksVsVDTracks}
+    %\includegraphics[width=.4\textwidth]{GlobalTracksVsMRPCHits}
+    %\includegraphics[width=.4\textwidth]{GlobalTracksVsGRCClusters}
+  %\end{figure}
+%\end{frame}
+
+\begin{frame}{VTPC-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{Cl_XY_VTPC1}
+\includegraphics[width=0.45\textwidth]{Cl_ZX_VTPC1}\\
+\includegraphics[width=0.45\textwidth]{Cl_ZY_VTPC1}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{Cl_Y_VTPC1}
+\includegraphics[width=0.45\textwidth]{Cl_Y_VTPC1_CutOffMax}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{VTPC-1 Time Slices}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC1_sec0}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC1_sec1}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC1_sec2}\\
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC1_sec3}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC1_sec4}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC1_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-1 Pads}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{NPads_VTPC1_sec0}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC1_sec1}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC1_sec2}\\
+\includegraphics[width=0.32\textwidth]{NPads_VTPC1_sec3}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC1_sec4}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC1_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-1 MaxADC}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC1_sec0}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC1_sec1}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC1_sec2}\\
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC1_sec3}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC1_sec4}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC1_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-1 Charge}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{Charge_VTPC1_sec0}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC1_sec1}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC1_sec2}\\
+\includegraphics[width=0.32\textwidth]{Charge_VTPC1_sec3}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC1_sec4}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC1_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+VTPC-2
+\end{frame}
+
+\begin{frame}{VTPC-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_VTPC2}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_VTPC2}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_VTPC2}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_Y_VTPC2}
+\includegraphics[width=0.45\textwidth]{Cl_Y_VTPC2_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-2 Time Slices}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC2_sec0}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC2_sec1}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC2_sec2}\\
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC2_sec3}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC2_sec4}
+\includegraphics[width=0.32\textwidth]{TSlices_VTPC2_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-2 Pads}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{NPads_VTPC2_sec0}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC2_sec1}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC2_sec2}\\
+\includegraphics[width=0.32\textwidth]{NPads_VTPC2_sec3}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC2_sec4}
+\includegraphics[width=0.32\textwidth]{NPads_VTPC2_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-2 MaxADC}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC2_sec0}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC2_sec1}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC2_sec2}\\
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC2_sec3}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC2_sec4}
+\includegraphics[width=0.32\textwidth]{MaxADC_VTPC2_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}{VTPC-2 Charge}
+\begin{figure}
+\centering
+\includegraphics[width=0.32\textwidth]{Charge_VTPC2_sec0}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC2_sec1}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC2_sec2}\\
+\includegraphics[width=0.32\textwidth]{Charge_VTPC2_sec3}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC2_sec4}
+\includegraphics[width=0.32\textwidth]{Charge_VTPC2_sec5}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+MTPC-L
+\end{frame}
+
+\begin{frame}{MTPC-L}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_MTPCL}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_MTPCL}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_MTPCL}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-L}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_Y_MTPCL}
+\includegraphics[width=0.45\textwidth]{Cl_Y_MTPCL_CutOffMax}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{MTPC-L Time Slices}
+\begin{figure}
+\centering
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec0}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec1}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec2}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec3}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec4}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec5}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec6}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec7}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec8}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec9}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec10}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec11}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec12}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec13}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec14}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec15}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec16}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec17}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec18}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec19}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec20}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec21}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec22}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec23}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCL_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-L Pads}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec0}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec1}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec2}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec3}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec4}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec5}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec6}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec7}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec8}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec9}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec10}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec11}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec12}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec13}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec14}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec15}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec16}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec17}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec18}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec19}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec20}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec21}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec22}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec23}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCL_sec24}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-L MaxADC}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec0}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec1}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec2}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec3}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec4}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec5}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec6}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec7}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec8}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec9}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec10}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec11}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec12}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec13}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec14}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec15}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec16}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec17}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec18}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec19}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec20}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec21}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec22}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec23}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCL_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-L Charge}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec0}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec1}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec2}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec3}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec4}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec5}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec6}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec7}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec8}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec9}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec10}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec11}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec12}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec13}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec14}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec15}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec16}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec17}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec18}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec19}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec20}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec21}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec22}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec23}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCL_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+MTPC-R
+\end{frame}
+
+\begin{frame}{MTPC-R}
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{Cl_XY_MTPCR}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_MTPCR}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_MTPCR}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-R}
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{Cl_Y_MTPCR}
+\includegraphics[width=0.45\textwidth]{Cl_Y_MTPCR_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-R Time Slices}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec0}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec1}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec2}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec3}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec4}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec5}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec6}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec7}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec8}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec9}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec10}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec11}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec12}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec13}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec14}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec15}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec16}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec17}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec18}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec19}\\
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec20}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec21}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec22}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec23}
+\includegraphics[width=0.19\textwidth]{TSlices_MTPCR_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-R Pads}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec0}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec1}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec2}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec3}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec4}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec5}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec6}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec7}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec8}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec9}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec10}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec11}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec12}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec13}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec14}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec15}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec16}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec17}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec18}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec19}\\
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec20}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec21}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec22}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec23}
+\includegraphics[width=0.19\textwidth]{NPads_MTPCR_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-R MaxADC}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec0}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec1}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec2}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec3}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec4}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec5}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec6}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec7}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec8}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec9}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec10}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec11}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec12}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec13}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec14}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec15}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec16}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec17}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec18}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec19}\\
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec20}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec21}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec22}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec23}
+\includegraphics[width=0.19\textwidth]{MaxADC_MTPCR_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}{MTPC-R Charge}
+\begin{figure}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec0}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec1}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec2}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec3}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec4}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec5}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec6}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec7}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec8}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec9}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec10}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec11}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec12}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec13}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec14}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec15}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec16}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec17}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec18}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec19}\\
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec20}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec21}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec22}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec23}
+\includegraphics[width=0.19\textwidth]{Charge_MTPCR_sec24}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+FTPC1
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_FTPC1}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_FTPC1}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_FTPC1}
+\includegraphics[width=0.4\textwidth]{Cl_Y_FTPC1}
+%\includegraphics[width=0.45\textwidth]{Cl_Y_FTPC1_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.23\textwidth]{TSlices_FTPC1_sec0}
+\includegraphics[width=0.23\textwidth]{NPads_FTPC1_sec0}
+\includegraphics[width=0.23\textwidth]{MaxADC_FTPC1_sec0}
+\includegraphics[width=0.23\textwidth]{Charge_FTPC1_sec0} 
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+FTPC2
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_FTPC2}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_FTPC2}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_FTPC2}
+\includegraphics[width=0.4\textwidth]{Cl_Y_FTPC2}
+%\includegraphics[width=0.45\textwidth]{Cl_Y_FTPC2_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.23\textwidth]{TSlices_FTPC2_sec0}
+\includegraphics[width=0.23\textwidth]{NPads_FTPC2_sec0}
+\includegraphics[width=0.23\textwidth]{MaxADC_FTPC2_sec0}
+\includegraphics[width=0.23\textwidth]{Charge_FTPC2_sec0} \\
+\includegraphics[width=0.23\textwidth]{TSlices_FTPC2_sec1}
+\includegraphics[width=0.23\textwidth]{NPads_FTPC2_sec1}
+\includegraphics[width=0.23\textwidth]{MaxADC_FTPC2_sec1}
+\includegraphics[width=0.23\textwidth]{Charge_FTPC2_sec1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+FTPC3
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_FTPC3}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_FTPC3}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_FTPC3}
+\includegraphics[width=0.4\textwidth]{Cl_Y_FTPC3}
+%\includegraphics[width=0.45\textwidth]{Cl_Y_FTPC3_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.23\textwidth]{TSlices_FTPC3_sec0}
+\includegraphics[width=0.23\textwidth]{NPads_FTPC3_sec0}
+\includegraphics[width=0.23\textwidth]{MaxADC_FTPC3_sec0}
+\includegraphics[width=0.23\textwidth]{Charge_FTPC3_sec0} \\
+\includegraphics[width=0.23\textwidth]{TSlices_FTPC3_sec1}
+\includegraphics[width=0.23\textwidth]{NPads_FTPC3_sec1}
+\includegraphics[width=0.23\textwidth]{MaxADC_FTPC3_sec1}
+\includegraphics[width=0.23\textwidth]{Charge_FTPC3_sec1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+GTPC
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_GTPC}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_GTPC}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_GTPC}
+\includegraphics[width=0.4\textwidth]{Cl_Y_GTPC}
+%\includegraphics[width=0.45\textwidth]{Cl_Y_GTPC_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.49\textwidth]{TSlices_GTPC_sec0}
+\includegraphics[width=0.49\textwidth]{NPads_GTPC_sec0}\\
+\includegraphics[width=0.49\textwidth]{MaxADC_GTPC_sec0}
+\includegraphics[width=0.49\textwidth]{Charge_GTPC_sec0}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\centering
+\Huge
+LTT
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{Cl_XY_LTT}
+\includegraphics[width=0.4\textwidth]{Cl_ZX_LTT}\\
+\includegraphics[width=0.4\textwidth]{Cl_ZY_LTT}
+\includegraphics[width=0.4\textwidth]{Cl_Y_LTT}
+%\includegraphics[width=0.45\textwidth]{Cl_Y_LTT_CutOffMax}
+\end{figure}
+\end{frame}
+
+\begin{frame}{}
+\begin{figure}
+\centering
+\includegraphics[width=0.49\textwidth]{TSlices_LTT_sec0}
+\includegraphics[width=0.49\textwidth]{NPads_LTT_sec0}\\
+\includegraphics[width=0.49\textwidth]{MaxADC_LTT_sec0}
+\includegraphics[width=0.49\textwidth]{Charge_LTT_sec0}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Cross-detector correlations}
+  \begin{figure}
+    \includegraphics[width=.49\textwidth]{VTPC1vsVTPC2ClustersT1}
+    \includegraphics[width=.49\textwidth]{VTPC1vsVTPC2ClustersT2}
+  \end{figure}
+\end{frame}
+\begin{frame}{Cross-detector correlations}
+  \begin{figure}
+    \includegraphics[width=.49\textwidth]{VTPC2vsMTPCClustersT1}
+    \includegraphics[width=.49\textwidth]{VTPC2vsMTPCClustersT2}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Cross-detector correlations}
+  \begin{figure}
+    \includegraphics[width=.45\textwidth]{BeamVTPC1TrackXDifferenceAtTargetZ}
+    \includegraphics[width=.45\textwidth]{BeamVTPC1TrackYDifferenceAtTargetZ}\\
+    \includegraphics[width=.45\textwidth]{BeamVTPC1TrackDifferenceAtTargetZ}
+  \end{figure}
+\end{frame}
+
+%\begin{frame}{Cross-detector correlations}  
+%  \begin{figure}
+%    \includegraphics[width=.45\textwidth]{VDClustersvsFPSDEnergyT1}
+%    \includegraphics[width=.45\textwidth]{VDClustersvsFPSDEnergyT2}\\ 
+%    \includegraphics[width=.45\textwidth]{VDClustersvsMPSDEnergyT1} 
+%    \includegraphics[width=.45\textwidth]{VDClustersvsMPSDEnergyT2} 
+%  \end{figure} 
+%\end{frame}  
+
+
+\begin{frame}{Cross-detector correlations}
+  \begin{figure}
+    \includegraphics[width=.45\textwidth]{GlobalTracksVsPSDEnergy}\\
+    \includegraphics[width=.45\textwidth]{GlobalTracksVsPSDEnergyT1}
+    \includegraphics[width=.45\textwidth]{GlobalTracksVsPSDEnergyT2}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Track multiplicities}
+  \begin{figure}
+    \includegraphics[width=.3\textwidth]{VTPC1TrackMultiplicityT1}
+    \includegraphics[width=.3\textwidth]{VTPC2TrackMultiplicityT1}
+    \includegraphics[width=.3\textwidth]{MTPCTrackMultiplicityT1}\\
+    \includegraphics[width=.3\textwidth]{VTPC1TrackMultiplicityT2}
+    \includegraphics[width=.3\textwidth]{VTPC2TrackMultiplicityT2}
+    \includegraphics[width=.3\textwidth]{MTPCTrackMultiplicityT2}
+  \end{figure}
+\end{frame}
+
+%\begin{frame}{Track multiplicities}   
+%  \begin{figure}  
+%    \includegraphics[width=.3\textwidth]{VTPC1GlobalTrackMultiplicityT1} 
+%    \includegraphics[width=.3\textwidth]{VTPC2GlobalTrackMultiplicityT1}     
+%    \includegraphics[width=.3\textwidth]{MTPCGlobalTrackMultiplicityT1}\\      
+%    \includegraphics[width=.3\textwidth]{VTPC1GlobalTrackMultiplicityT2}  
+%    \includegraphics[width=.3\textwidth]{VTPC2GlobalTrackMultiplicityT2} 
+%    \includegraphics[width=.3\textwidth]{MTPCGlobalTrackMultiplicityT2}  
+%  \end{figure}
+%\end{frame}
+
+\end{document}

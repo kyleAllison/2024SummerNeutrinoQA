@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Load general Shine XML definitions. -->
+<!DOCTYPE bootstrap SYSTEM '@CONFIGDIR@/ShineGeneral.dtd' [
+<!ENTITY standardStaticDetConfig SYSTEM './Managers/standardStaticDetConfig.xml'>
+]>
+
+<bootstrap
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://cern.ch/na61/schema/types"
+    xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/bootstrap.xsd'>
+
+  <schemaPathReplacements>
+    <replace old="[CONFIGDIR]" new="&configDir;"/>
+    <replace old="[SCHEMAPATH]" new="&configDir;"/>
+    <replace old="[SCHEMAPATH_IMPORTS]" new="&configDir;"/>
+    <replace old="[DATADIR]" new="&dataDir;"/>
+  </schemaPathReplacements>
+
+  <!-- Manager precedence list and Manager configs for Detector description. -->
+  &standardStaticDetConfig;
+
+  <centralConfig>
+
+    <!-- Customized Manager precedence list. -->
+    <configLink
+	id         = "DManagerRegister"
+	xlink:href = "./Managers/DManagerRegisterStaticConfig.xml"/>
+
+    <configLink
+	id         = "RunLogTextManager"
+	xlink:href = "./Managers/RunLogTextManager.xml"/>
+
+    <configLink
+	id         = "RunFixedSettingsManager"
+	xlink:href = "./Managers/RunFixedSettingsManager.xml"/>
+    
+    <configLink
+	id         = "LocalTrackFinderBR"
+	xlink:href = "./ConfigFiles/LocalTrackFinderBR-VtxIIOnly.xml"/>
+    
+    <configLink
+	id         = "GlobalTrackMergerBR"
+	xlink:href = "./ConfigFiles/GlobalTrackMergerBR-VtxIIOnly.xml"/>
+    
+    <configLink
+	id         = "LongTargetVertexFinderBR"
+	xlink:href = "./ConfigFiles/LongTargetVertexFinderBR.xml"/>
+    
+    <configLink
+	id         = "TargetConfigFixedManager"
+	xlink:href = "./ConfigFiles/TargetConfigFixedManager.xml"/>
+    
+    <configLink
+	id         = "DRS4CalibrationManager"
+	xlink:href = "./Managers/DRS4CalibrationManager.xml"/>
+
+    <configLink
+	id         = "BPDStaticInfoXMLManager"
+	xlink:href = "./Managers/BPDStaticInfo.xml"/>
+
+    <configLink
+	id         = "TPCGlobalT0FixedManager"
+	xlink:href = "./Managers/TPCGlobalT0FixedManager.xml"/>
+
+    <configLink
+	id         = "TPCChamberT0FixedManager"
+	xlink:href = "./Managers/TPCChamberT0FixedManager.xml"/>
+
+    <configLink
+	id         = "TPCEDistoFixedManager"
+	xlink:href = "./Managers/TPCEDistoFixedManager.xml"/>
+
+    <configLink
+	id         = "TPCAlignmentGeometryFixedManager"
+	xlink:href = "./Managers/TPCAlignmentGeometryFixedManager.xml"/>
+
+    <configLink 
+	id         = "SiliconGeometryXMLManager" 
+	xlink:href = "./Managers/SiliconGeometryXMLManager.xml"/> 
+
+    <configLink
+	id         = "EventFileReader"
+	xlink:href = "./ConfigFiles/EventFileReader.xml"/>
+
+    <configLink
+	id         = "V0FinderSG"
+	xlink:href = "./ConfigFiles/V0FinderSG.xml"/>
+
+    <configLink
+	id         = "V0FitterSG"
+	xlink:href = "./ConfigFiles/V0FitterSG.xml"/>
+
+    <configLink
+	id         = "TPCClusterFinderAL"
+	xlink:href = "./ConfigFiles/TPCClusterFinderAL.xml"/>
+
+    <configLink
+	id         = "ModuleSequence"
+	xlink:href = "./ConfigFiles/ModuleSequence.xml"/>
+
+    <configLink
+	id         = "ShineFileExporter"
+	xlink:href = "./ConfigFiles/ShineFileExporter.xml"/>
+    
+    <configLink
+	id         = "DelayWireChamberReconstructorLR"
+	xlink:href = "./ConfigFiles/DelayWireChamberReconstructorLR.xml"/>
+    
+    <configLink
+	id         = "BPDFixedManager"
+	xlink:href = "./ConfigFiles/BPDFixedManager.xml"/>
+    
+    <!--Standard manager settings-->    
+
+    <configLink
+	id         = "TPCStraightTrackFinderHoughAL"
+	xlink:href = "&configDir;/TPCStraightTrackFinderHoughAL.xml"/>
+    
+    <configLink
+	id         = "TPCTPCAndTPCGRCMismatchCalculatorAL"
+	xlink:href = "&configDir;/TPCTPCAndTPCGRCMismatchCalculatorAL.xml"/>
+
+    <configLink
+	id         = "GRCClusterFinderAL"
+	xlink:href = "&configDir;/GRCClusterFinderAL.xml"/>
+
+    <configLink
+	id         = "DRS4CalibratorKA"
+	xlink:href = "&configDir;/DRS4CalibratorKA.xml"/>
+
+    <configLink
+	id         = "BPDReconstructorSG"
+	xlink:href = "&configDir;/BPDReconstructorSG.xml"/>
+
+    <configLink
+	id         = "TPCWienerFiltererAL"
+	xlink:href = "&configDir;/TPCWienerFiltererAL.xml"/>
+    
+    <configLink
+	id         = "ExBCorrectorSG"
+	xlink:href = "&configDir;/ExBCorrectorSG.xml"/>
+
+    <configLink
+	id         = "PSDReconstructorSG"
+	xlink:href = "&configDir;/PSDReconstructorSG.xml"/>
+
+    <configLink
+	id         = "GRCToTrackMatcherAL"
+	xlink:href = "&configDir;/GRCToTrackMatcherAL.xml"/>
+    
+    <configLink
+	id         = "ResidualsModuleBR"
+	xlink:href = "&configDir;/ResidualsModuleBR.xml"/>
+
+    <!-- Settings of Quality Assessment Modules. -->
+
+    <configLink
+	id         = "QAOrchestratorSG"
+	xlink:href = "./ConfigFiles/QAOrchestratorSG.xml"/>
+
+    <configLink
+	id         = "TDAQQA"
+	xlink:href = "&configDir;/TDAQQA.xml"/>
+
+    <configLink
+	id         = "BPDQA"
+	xlink:href = "&configDir;/BPDQA.xml"/>
+
+    <configLink
+	id         = "PSDQA"
+	xlink:href = "&configDir;/PSDQA.xml"/>
+
+    <configLink
+	id         = "MRPCQA"
+	xlink:href = "&configDir;/MRPCQA.xml"/>
+
+    <configLink
+	id         = "VDQA"
+	xlink:href = "&configDir;/VDQA.xml"/>
+
+    <configLink
+	id         = "TOFFQualityAssessmentKA"
+	xlink:href = "&configDir;/TOFFQualityAssessmentKA.xml"/>
+
+    <configLink
+	id         = "TPCClusterQA"
+	xlink:href = "&configDir;/TPCClusterQA.xml"/>
+
+    <configLink
+	id         = "TPCVertexQA"
+	xlink:href = "&configDir;/TPCVertexQA.xml"/>
+
+    <configLink
+	id         = "GRCClusterQA"
+	xlink:href = "&configDir;/GRCClusterQA.xml"/>
+
+    <configLink
+	id         = "DetectorCorrelationQA"
+	xlink:href = "./ConfigFiles/DetectorCorrelationQA.xml"/>
+
+    <configLink
+	id         = "QASummarizerSG"
+	xlink:href = "./ConfigFiles/QASummarizerSG.xml"/>
+
+  </centralConfig>
+
+</bootstrap>

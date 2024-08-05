@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module LongTargetVertexFinderBR -->
+
+<LongTargetVertexFinderBR
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/LongTargetVertexFinderBR.xsd'>
+
+  <!-- Minimum and maximum Kalman Filter step size. -->
+  <minKalmanFilterStepSize unit="cm"> 0.01 </minKalmanFilterStepSize> 
+  <maxKalmanFilterStepSize unit="cm"> 5.0 </maxKalmanFilterStepSize> 
+
+  <upstreamSearchLimitZ unit="cm">   -800   </upstreamSearchLimitZ> 
+  <downstreamSearchLimitZ unit="cm"> -100 </downstreamSearchLimitZ> 
+
+  <searchRadius unit="cm"> 1.0 </searchRadius>
+
+  <minimumTracksForVertexCreation> 1 </minimumTracksForVertexCreation>
+
+  <!-- Should reflect charge of beam particle type. Used for beam extrapolation. -->
+  <beamCharge> 1 </beamCharge>
+
+  <nCoarseSearchSlices> 700 </nCoarseSearchSlices>
+  <nFineSearchSlices> 10 </nFineSearchSlices>
+
+  <zPositionToleranceForGrouping unit="cm"> 1 </zPositionToleranceForGrouping> 
+  <overallPositionToleranceForGrouping unit="cm"> 1 </overallPositionToleranceForGrouping>
+
+  <maxRefitChi2Increase> 100 </maxRefitChi2Increase>
+
+</LongTargetVertexFinderBR>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TPCEDistoFixedManager SYSTEM "[CONFIGDIR]/ShineGeneral.dtd">
+
+<TPCEDistoFixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="[SCHEMAPATH]/TPCEDistoFixedManager.xsd">
+  
+  <!-- Field-off, local residuals -->
+  <!-- If the tpc.corr files cannot be accessed, then the EDisto residual corrections arrays will be 
+      empty and no corrections will applied -->
+  <entry> /eos/experiment/na61/data/calibration/residuals/2022/DummyValues/ </entry> 
+  
+</TPCEDistoFixedManager>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<BPDFixedManager
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="[SCHEMAPATH]/BPDFixedManager.xsd">
+
+  <geometry>
+    <!-- positions given in NA61 coordinate system -->
+    <position id="BPD1" unit="cm"> 0.88   -0.19  -3616.50 </position>
+    <position id="BPD2" unit="cm"> 0.13   0.57  -1471.32 </position>
+    <position id="BPD3" unit="cm"> -0.19   0.36  -829.78 </position>
+  </geometry>
+
+</BPDFixedManager>

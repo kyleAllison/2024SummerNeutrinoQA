@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module MainVertexModuleBR -->
+
+<MainVertexModuleBR
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/MainVertexModuleBR.xsd'>
+
+  <!-- Track fitter to use for track extrapolation and track refits. Options are:
+       -KalmanFilter for track fits in the magnetic field 
+       -StraightTrackFitter for straight track fits (no magnetic field)
+  -->
+  <trackFitter> KalmanFilter </trackFitter>
+  
+  <!-- Fitting algorithm. 
+       - BPDVertex simply uses the BPD track and target intersection as the main vertex position. Vertex tracks are fit using this constraint.
+       - leastSquares2D performs a 2D least squares fit using the seed position's z-coordinate as a constraint.
+       - leastSquares3D performs a 3D least squares fit for the main vertex using linearized tracks at the seed z-position. -->
+  <fitterToUse> BPDVertex </fitterToUse>
+
+  <!-- Number of fit iterations. Input seed position for each subsequent itetation is replaced with the fit position 
+       from the previous iteration. -->
+  <nFitIterations> 1 </nFitIterations>
+  
+  <!-- Fit seeding options. 
+       - existingMainVertex will seed using an existing main vertex in the event, re-fitting all tracks. There must be
+       at least one existing vertex in the event for this option to perform the fit.
+       - BPDAtTargetCenter will seed using the point of BPD-target intersection. No existing vertex tracks are necessary. -->
+  <seedType> BPDAtTargetCenter </seedType> 
+
+  <!-- Maximum displacement between extrapolated track position and seed position for a track to enter vertex fit. -->
+  <maxDistanceForFit> 10 </maxDistanceForFit> <!-- cm -->
+
+  <!-- Maximum track chi2 increase for a vertex track refit to be accepted. -->
+  <maxRefitChi2Increase> 5 </maxRefitChi2Increase> 
+
+  <!-- Minimum and maximum Kalman Filter step size. Doesn't have to be too fine-grained here, since we're tracking 
+       within chambers and not extrapolating very far. -->
+  <minKalmanFilterStepSize unit="cm"> 0.05 </minKalmanFilterStepSize> 
+  <maxKalmanFilterStepSize unit="cm"> 5.0 </maxKalmanFilterStepSize> 
+
+  <!-- Maximum extrapolated track impact parameter for vertex association (after vertex fit is performed). -->
+  <impactParameterCutX> 10 </impactParameterCutX> <!-- cm -->
+  <impactParameterCutY> 10 </impactParameterCutY> <!-- cm -->
+  
+</MainVertexModuleBR>

@@ -1,0 +1,31 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Ignore Shine installs
+Shine
+TestShine
+work
+log.bz2
+test
+
+!Makefile
+NativeReconstruction/bootstrap.xml
+scripts/DailyCreateQAPDF.log
+
+# Ignore large, unnecessary, and temp files
+*.raw
+*.root
+#*
+*#*
+*~
+*.o
+*.png
+*.dat
+.__*
+*.swp

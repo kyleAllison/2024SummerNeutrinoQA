@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DelayWireChamberReconstructorLR
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="[SCHEMAPATH]/DelayWireChamberReconstructorLR.xsd">
+
+  <CalibrationConstants id= "1">
+    <OffsetX> 0.0243677 </OffsetX>
+    <SlopeX> 0.0183993 </SlopeX>
+    <OffsetY> -0.0806633 </OffsetY>
+    <SlopeY> -0.018305 </SlopeY>
+    <PositionError> 100 </PositionError>
+    <TimeLow>-800</TimeLow>
+    <TimeHigh>-0</TimeHigh>
+  </CalibrationConstants>
+
+<CalibrationConstants id= "2">
+    <OffsetX> 0.0606261 </OffsetX>
+    <SlopeX> 0.0180171 </SlopeX>
+    <OffsetY> -0.0521528 </OffsetY>
+    <SlopeY> -0.0179546 </SlopeY>
+    <PositionError> 100 </PositionError>
+    <TimeLow>-800</TimeLow>
+    <TimeHigh>0</TimeHigh>
+  </CalibrationConstants>
+
+<CalibrationConstants id= "3">
+    <OffsetX> 0.00254429 </OffsetX>
+    <SlopeX> 0.0184476 </SlopeX>
+    <OffsetY> 0.00285735 </OffsetY>
+    <SlopeY> -0.0183333 </SlopeY>
+    <PositionError> 100 </PositionError>
+    <TimeLow>-800</TimeLow>
+    <TimeHigh>0</TimeHigh>
+  </CalibrationConstants>
+
+  
+<AnalysisFileName> DelayWireChamberReconstruction.root </AnalysisFileName>
+
+</DelayWireChamberReconstructorLR>

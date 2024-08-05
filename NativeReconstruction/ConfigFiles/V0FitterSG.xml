@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Configuration of Module V0Fitter -->
+
+<V0FitterSG
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation='[SCHEMAPATH]/V0FitterSG.xsd'>
+
+  <mainVertexConstrained> 0 </mainVertexConstrained>
+
+  <!-- Minuit's initial argument: tolerance. 1. is the 1e-3 -->
+  <minuitTolerance> 1. </minuitTolerance>
+
+</V0FitterSG>
